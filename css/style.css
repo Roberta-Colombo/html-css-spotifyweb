@@ -30,6 +30,10 @@ body {
     color: var(--grey);
 }
 
+li a:hover {
+    color: var(--white);
+}
+
 .bold {
     font-weight: bold;
 }
@@ -120,6 +124,10 @@ button {
     border-radius: 40px;
 }
 
+button:hover {
+    transform: scale(1.05);
+}
+
 /* Style inner-content */
 
 .inner-content {
@@ -149,10 +157,16 @@ h2 {
 .card {
     padding: 1rem 0.5rem 0.5rem 0.5rem;
     width: calc(100% / 6);
+    cursor: pointer;
+}
+
+.card-image {
+    position: relative;
 }
 
 .card-image img {
     width: 100%;
+    display: block;
 }
 
 .albums {
@@ -163,6 +177,34 @@ h2 {
     text-align: center;
     line-height: 1.8;
     padding-top: 0.5rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none;
+}
+
+.card:hover .overlay {
+    display: block;    
+}
+
+.card-image i {
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    display: none;
+}
+
+.card:hover .card-image i {
+    display: block;
 }
 
 .sub {
