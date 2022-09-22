@@ -1,0 +1,72 @@
+/* Utility */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+--black: rgba(0, 0, 0, 1);
+--blueblack: rgba(20, 25, 34, 1);
+--white: rgba(255, 255, 255, 1);
+--grey: rgba(163, 163, 163, 1);
+--darkgrey: rgba(40, 40, 40, 1);
+--lime: rgba(173, 255, 47, 1);
+--lightgrey: rgba(193, 193, 193, 1);
+--black-overlay: rgba(8, 11, 18, 0.5);
+--whitegrey-home: rgba(210, 210, 210, 1);
+}
+
+/* Style main */
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.playbar {
+    width: 100%;
+    height: 95px;
+    background-color: red;
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 95px);
+    background-color: green;  
+    display: flex;  
+}
+
+.main-content {
+    width: calc(100% - 230px);
+    height: 100%;
+    overflow-y: scroll;
+}
+
+nav {
+    width: 230px;
+    height: 100%;
+    background-color: bisque;
+}
+
+.top-bar {
+    width: 100%;
+    height: 95px;
+    background-color: var(--black-overlay);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.inner-content {
+    height: 100%;  
+    margin-top: 95px;
+}
