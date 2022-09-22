@@ -26,7 +26,7 @@ body {
     color: var(--white);
 }
 
-.grey-txt {
+.grey-txt, li a {
     color: var(--grey);
 }
 
@@ -34,8 +34,16 @@ body {
     font-weight: bold;
 }
 
+.medium-txt {
+    font-size: 0.8rem;
+}
+
 a {
     text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 .d-flex {
@@ -44,6 +52,10 @@ a {
 
 .justify-end {
     justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 .align-center {
@@ -85,6 +97,8 @@ aside {
     background-color: bisque;
 }
 
+/* Style top-bar */
+
 .top-bar {
     width: 100%;
     height: 95px;
@@ -102,10 +116,23 @@ button {
     border-radius: 40px;
 }
 
-
+/* Style inner-content */
 
 .inner-content {
     height: 100%;  
     margin-top: 95px;
 }
 
+.inner-content li {
+    padding-right: 1rem;
+    padding-top: 1.2rem;
+}
+
+.active {
+    /* display: block; */
+    width: 3%;
+    margin-top: 5px;
+    margin-left: 325px;
+    height: 2px;
+    background-color: var(--lime);
+}
