@@ -38,6 +38,10 @@ body {
     font-size: 0.8rem;
 }
 
+.small-txt {
+    font-size: 0.7rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -129,10 +133,34 @@ button {
 }
 
 .active {
-    /* display: block; */
     width: 3%;
     margin-top: 5px;
     margin-left: 325px;
     height: 2px;
     background-color: var(--lime);
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.card {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    width: calc(100% / 6);
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.albums {
+    margin: 0 0.7rem;
+}
+
+.card-caption {
+    text-align: center;
+    line-height: 1.8;
+    padding-top: 0.5rem;
 }
