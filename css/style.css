@@ -26,11 +26,11 @@ body {
     color: var(--white);
 }
 
-.grey-txt, li a {
+.grey-txt, li a, span a {
     color: var(--grey);
 }
 
-li a:hover {
+li a:hover, span a:hover {
     color: var(--white);
 }
 
@@ -288,4 +288,13 @@ h2 {
     position: absolute;
     top: 10px;
     left: 50px;
+}
+
+.playlist ul li {
+    padding-bottom: 1rem;
+}
+
+.playlist.pad-top {
+    height: 50%;
+    overflow-y: auto;
 }
