@@ -233,11 +233,12 @@ h2 {
 .user-profile {
     height: 80px;
     background-color: blueviolet;
-}
+}    
 
 .navbar {
     height: calc(100% - 80px);
     background-color: var(--black);
+    overflow: hidden;
 }
 
 .logo img {
@@ -295,6 +296,6 @@ h2 {
 }
 
 .playlist.pad-top {
-    height: 50%;
+    height: 80%;
     overflow-y: auto;
 }
