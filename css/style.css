@@ -58,8 +58,16 @@ li {
     display: flex;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .justify-end {
     justify-content: flex-end;
+}
+
+.justify-start {
+    justify-content: flex-start;
 }
 
 .justify-center {
@@ -218,4 +226,66 @@ h2 {
 
 .albums:last-of-type {
    padding-bottom: 3rem;
+}
+
+/* Style aside */
+
+.user-profile {
+    height: 80px;
+    background-color: blueviolet;
+}
+
+.navbar {
+    height: calc(100% - 80px);
+    background-color: var(--black);
+}
+
+.logo img {
+    width: 60%;
+}
+
+.pad-left {
+    padding-left: 1rem;
+}
+
+.pad-top {
+    padding-top: 1.5rem;
+}
+
+.home img, .search img, .library img  {
+    width: 8%;
+}
+
+.nav span {
+    display: inline-block;
+    padding-left: 0.2rem;
+    vertical-align: middle;
+    padding-bottom: 0.8rem;
+}
+
+.plus-square{
+    margin-top: 0.8rem;
+    position: relative;
+}
+
+.grey-square {
+    height: 40px;
+    width: 40px;
+    background-color: var(--lightgrey);
+    position: relative;
+}
+
+.plus {
+    position: absolute;
+    font-size: 2.2rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.playlist.pad-top span {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 10px;
+    left: 50px;
 }
