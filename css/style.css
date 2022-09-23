@@ -30,7 +30,7 @@ body {
     color: var(--grey);
 }
 
-li a:hover, span a:hover {
+li a:hover, span a:hover, .controls i {
     color: var(--white);
 }
 
@@ -360,6 +360,11 @@ hr {
 
 .playing i {
     margin-right: 0.7rem;
+}
+
+.controls ul {
+    margin-right: 0.7rem;
+    min-width: 250px;
 }
 
 
