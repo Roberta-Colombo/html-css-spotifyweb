@@ -38,6 +38,10 @@ li a:hover, span a:hover {
     font-weight: bold;
 }
 
+.bigger-txt {
+    font-size: 0.9rem;
+}
+
 .medium-txt {
     font-size: 0.8rem;
 }
@@ -168,7 +172,7 @@ h2 {
     cursor: pointer;
 }
 
-.card-image {
+.card-image, .download, .user-info {
     position: relative;
 }
 
@@ -232,7 +236,7 @@ h2 {
 
 .user-profile {
     height: 80px;
-    background-color: blueviolet;
+    background-color: var(--black);
 }    
 
 .navbar {
@@ -253,7 +257,7 @@ h2 {
     padding-top: 1.5rem;
 }
 
-.home img, .search img, .library img  {
+.home img, .search img, .library img {
     width: 8%;
 }
 
@@ -285,7 +289,6 @@ h2 {
 }
 
 .playlist.pad-top span {
-    font-size: 0.9rem;
     position: absolute;
     top: 10px;
     left: 50px;
@@ -298,4 +301,43 @@ h2 {
 .playlist.pad-top {
     height: 80%;
     overflow-y: auto;
+    padding-bottom: 4rem;
 }
+
+.download img {
+    width: 7%;
+}
+
+.download span {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.download {
+    padding-top: 0.6rem;
+}
+
+hr {
+    max-width: 85%;
+    margin-right: 1rem;
+    border-color: var(--grey);
+    margin-top: 0.2rem;
+}
+
+.profile-pic {
+    background-color: var(--lightgrey);
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+}
+
+.user-info span {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+}
+
