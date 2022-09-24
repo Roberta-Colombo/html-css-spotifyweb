@@ -250,6 +250,11 @@ h2 {
     width: 60%;
 }
 
+.logo-small img {
+    width: 13%;
+    display: none;
+}
+
 .pad-left {
     padding-left: 1rem;
 }
@@ -492,6 +497,65 @@ input[type=range] {
     background: var(--lightgrey);
   }
 
+/* RESPONSIVE  */
 
+@media screen and (max-width: 1100px) {
+    .albums {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-content, .top-bar {
+        width: 100%;
+    }
+
+    .inner-content ul {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: calc(100% / 2);
+    }
+
+    button {
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   
+    .logo img, .nav span, .playlist, .download span, hr, .user-info span  {
+        display: none;
+    }
+    
+    .logo-small img {
+        width: 13%;
+        display: block;
+    }
+
+    aside {
+        max-width: 10%;
+    }
+
+    button {
+        margin-right: 80px;
+    }
+
+    .navbar img {
+        width: 50%;
+    }
+
+    .download img {
+        width: 60%;
+        padding-left: 5px;
+    }
+
+}
 
  
