@@ -13,33 +13,33 @@
     <div class="wrapper">
         <main>
             <aside>
-                <div class="navbar pad-left pad-top">
-                    <div class="logo">
+                <div class="navbar pad-top">
+                    <div class="pad-left logo">
                         <img src="./img/logo.svg" alt="Logo Spotify">
                     </div>
 
-                    <div class="logo-small">
+                    <div class="pad-left logo-small">
                         <img src="./img/logo-small.svg" alt="Logo Spotify">
                     </div>
 
                     <div class="nav pad-top">
                         <div class="home">
-                            <img src="./img/home.svg" alt="Icona Home">
-                            <span class="medium-txt bold grey-txt"><a href="#">Home</a></span>
+                            <div class="active-nav"><img src="./img/home.svg" alt="Icona Home">
+                            <span class="medium-txt bold grey-txt"><a href="#">Home</a></span></div>
                         </div>
 
                         <div class="search">
-                            <img src="./img/search.svg" alt="Icona Search">
-                            <span class="medium-txt bold grey-txt"><a href="#">Cerca</a></span>
+                            <div class="active-nav"><img src="./img/search.svg" alt="Icona Search">
+                            <span class="medium-txt bold grey-txt"><a href="#">Cerca</a></span></div>
                         </div>
 
                         <div class="library">
-                            <img src="./img/libreria.svg" alt="Icona Libreria">
-                            <span class="medium-txt bold grey-txt"><a href="#">La tua libreria</a></span>
+                            <div class="active-nav"><img src="./img/libreria.svg" alt="Icona Libreria">
+                            <span class="medium-txt bold grey-txt"><a href="#">La tua libreria</a></span></div>
                         </div>
                     </div>
 
-                    <div class="playlist pad-top">
+                    <div class="playlist pad-left pad-top">
                         <div class="white-txt bold">PLAYLIST</div>
                         <div class="plus-square">
                             <div class="grey-square">
@@ -88,14 +88,13 @@
                 <!-- Menu  -->
                 <section class="inner-content">
                     <ul class="bold medium-txt d-flex justify-center">
-                        <li><a href="#">IN EVIDENZA</a></li>
-                        <li><a href="#">PODCAST</a></li>
-                        <li><a href="#">CLASSIFICHE</a></li>
-                        <li><a href="#">GENERI E MOOD</a></li>
-                        <li><a href="#">NUOVE USCITE</a></li>
-                        <li><a href="#">SCOPRI</a></li>
+                        <li><a href="#"><span class="active">IN EVIDENZA</span></a></li>
+                        <li><a href="#"><span class="active">PODCAST</span></a></li>
+                        <li><a href="#"><span class="active">CLASSIFICHE</span></a></li>
+                        <li><a href="#"><span class="active">GENERI E MOOD</span></a></li>
+                        <li><a href="#"><span class="active">NUOVE USCITE</span></a></li>
+                        <li><a href="#"><span class="active">SCOPRI</span></a></li>
                     </ul>
-                    <div class="active"></div>
 
                     <!-- Prima row album  -->
                     <h2 class="white-txt">Recently played</h2>
@@ -291,8 +290,6 @@
             </div>
 
         </div>
-    </div>
-    
-    
+    </div>       
 </body>
 </html>

@@ -156,11 +156,20 @@ button:hover {
 }
 
 .active {
-    width: 3%;
-    margin-top: 5px;
-    margin-left: 325px;
-    height: 2px;
-    background-color: var(--lime);
+    border-bottom: 2px solid var(--blueblack);
+    padding: 5px 0px;
+}
+
+.inner-content ul li:hover .active {
+    border-bottom: 2px solid var(--lime);
+}
+
+.active-nav {
+    border-left: 2px solid var(--black);
+}
+
+.nav div:hover .active-nav {
+    border-left: 3px solid var(--lime);
 }
 
 h2 {
@@ -264,7 +273,8 @@ h2 {
 }
 
 .home img, .search img, .library img {
-    width: 8%;
+    width: 15%;
+    padding-left: 10px;
 }
 
 .nav span {
@@ -347,7 +357,7 @@ hr {
     left: 40px;
 }
 
-/* Style playbar  */
+/* Style playbar - DA RIFARE  */
 
 .playbar {
     width: 100%;
