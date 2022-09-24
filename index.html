@@ -240,14 +240,16 @@
         </main>
 
         <div class="playbar d-flex justify-between align-center">
-            <div class="playing">
-                <ul class="d-flex justify-between align-center">
-                    <li class="d-flex justify-start align-center">
-                        <img src="./img/sinister.jpeg" alt="Sinister album cover">
-                        <span>
-                            <div class="small-txt bold white-txt">Sinister</div>
-                            <div class="tiny-txt bold grey-txt">Nome brano</div>
-                        </span>
+            <div class="playing d-flex justify-between">
+                <ul class="d-flex align-center">
+                    <li>
+                        <div class="album-song d-flex align-center">
+                            <img src="./img/sinister.jpeg" alt="Sinister album cover">
+                            <div>
+                                <div class="small-txt bold white-txt">Sinister</div>
+                                <div class="tiny-txt bold grey-txt">Nome brano</div>
+                            </div>
+                        </div>
                     </li>
 
                     <li class="grey-txt">
@@ -257,8 +259,26 @@
                 </ul>
             </div>
 
+            <div class="central-controls d-flex column">
+                <div class="music-controls">
+                    <ul class="white-txt d-flex justify-center align-center">
+                        <li><i class="fa-solid fa-shuffle"></i></li>
+                        <li><i class="fa-solid fa-backward-step"></i></li>
+                        <li><i class="fa-regular fa-circle-play"></i></li>
+                        <li><i class="fa-solid fa-forward-step"></i></li>
+                        <li><i class="fa-solid fa-rotate-right"></i></li>
+                    </ul>
+                </div>
+
+                <div id="song-length min-w200 d-flex justify-between align-center">
+                    <span class="t-left tiny-txt white-txt">0:25</span>
+                    <span><input type="range" id="duration" name="duration" min="0" max="10"></span>
+                    <span class="t-right tiny-txt white-txt">4:35</span>
+                </div>
+            </div>
+
             <div class="controls white-txt">
-                <ul class="d-flex justify-between align-center">
+                <ul class="min-w220 d-flex justify-between align-center">
                     <li><a href="#"><i class="fa-solid fa-list"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-desktop"></i></a></li>
                     <li><i class="fa-solid fa-volume-high"></i></li>
