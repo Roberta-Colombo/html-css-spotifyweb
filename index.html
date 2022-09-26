@@ -243,11 +243,59 @@
         </main>
 
         <div class="playbar d-flex justify-between align-center">
-            <div class="playing d-flex justify-between">
+            <div class="playing">
                 <ul class="d-flex align-center">
+                    <li><div class="playing-pic">
+                            <img src="./img/sinister.jpeg" alt="Sinister album cover">
+                        </div></li>    
+                            
+                    <li><div class="small-txt bold white-txt">Sinister</div>
+                        <div class="tiny-txt bold grey-txt">Nome brano</div></li>
+
+                    <li class="grey-txt">
+                        <div><a href="#"><i class="fa-regular fa-heart"></i></a></div></li> 
+                 
+                    <li><div><a href="#"><i class="fa-regular fa-folder"></i></a></div>
+                    </li>    
+                </ul>
+            </div>
+
+            <div class="central-controls d-flex column align-center">
+                <div class="music-controls">
+                    <ul class="white-txt d-flex align-center">
+                        <li><i class="fa-solid fa-shuffle"></i></li>
+                        <li><i class="fa-solid fa-backward-step"></i></li>
+                        <li><i class="fa-regular fa-circle-play"></i></li>
+                        <li><i class="fa-solid fa-forward-step"></i></li>
+                        <li><i class="fa-solid fa-rotate-right"></i></li>
+                    </ul>
+                </div>
+
+                <ul id="song-length" class="d-flex justify-center">
+                    <li><div class="t-left tiny-txt white-txt">0:25</div></li>
+                    <li><input type="range" id="duration" name="duration" min="0" max="100"></li>
+                    <li><div class="t-right tiny-txt white-txt">4:35</div></li>
+                </ul>
+            </div>
+
+            <div class="controls white-txt">
+                <ul class="d-flex align-center">
+                    <li><a href="#"><i class="fa-solid fa-list"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-desktop"></i></a></li>
+                    <li><i class="fa-solid fa-volume-high"></i></li>
+                    <li><input type="range" id="vol" name="vol" min="0" max="50"></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <div class="playbar d-flex justify-between align-center">
+            <div class="playing">
+                <ul class="d-flex justify-start align-center">
                     <li>
                         <div class="album-song d-flex align-center">
-                            <img src="./img/sinister.jpeg" alt="Sinister album cover">
+                            <div class="playing-pic">
+                                <img src="./img/sinister.jpeg" alt="Sinister album cover">
+                            </div>    
                             <div>
                                 <div class="small-txt bold white-txt">Sinister</div>
                                 <div class="tiny-txt bold grey-txt">Nome brano</div>
@@ -255,9 +303,9 @@
                         </div>
                     </li>
 
-                    <li class="grey-txt">
-                        <span><a href="#"><i class="fa-regular fa-heart"></i></a></span>
-                        <span><a href="#"><i class="fa-regular fa-folder"></i></a></span>
+                    <li class="grey-txt d-flex">
+                        <div><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                        <div><a href="#"><i class="fa-regular fa-folder"></i></a></div>
                     </li>    
                 </ul>
             </div>
@@ -289,7 +337,7 @@
                 </ul>
             </div>
 
-        </div>
+        </div> -->
     </div>       
 </body>
 </html>

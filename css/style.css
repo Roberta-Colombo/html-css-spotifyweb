@@ -357,51 +357,53 @@ hr {
     left: 40px;
 }
 
-/* Style playbar - DA RIFARE  */
+/* Style playbar */
 
 .playbar {
     width: 100%;
     height: 95px;
     background-color: var(--darkgrey);
+    z-index: 2000;
     position: fixed;
     bottom: 0;
-    z-index: 2000;
 }
 
-.playing img {
-    width: 20%;
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
+.playbar li {
+    padding-left: 10px;
+}
+
+.fa-regular.fa-heart {
+    padding-left: 30px;
+}
+
+.playing-pic {
+    width: 40px;
+    height: 40px;
+}
+
+.playing-pic img {
+    width: 100%;
 } 
 
-.playing i {
-    margin-right: 0.7rem;
-}
-
-.playing li:last-child {
-    position: absolute;
-    left: 160px;
-}
-
-.playing ul {
-    max-width: 220px;
-}
-
-.controls ul {
-    margin-right: 0.7rem;
-}
-
-.min-w220 {
-    min-width: 220px; 
-}
-
 .central-controls {
-    width: 30%;
+    height: 90px;
+    padding-top: 0.7rem;
+    max-width: 30%;
 }
 
-.music-controls ul {
-    min-width: 50%;
-    padding-bottom: 1rem;
+.t-left, .t-right {
+    width: 30px;
+    position: absolute;
+    bottom: 30px;
+} 
+
+#song-length input {
+    width: 280px;
+}
+
+.music-controls ul:first-child {
+    width: 20%; 
+    padding-bottom: 0.5rem;   
 }
 
 .music-controls ul i {
@@ -410,29 +412,21 @@ hr {
 
 .music-controls .fa-regular.fa-circle-play {
     font-size: 1.5rem;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .fa-solid.fa-backward-step {
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 .fa-solid.fa-forward-step {
-    padding-right: 15px;
+    padding-right: 10px;
 }
 
-.t-left {
-    padding-right: 15px;
-}
-
-.t-right {
-    padding-left: 15px;
-} 
-
-#duration {
-    width: 80%;
-    text-align: center;
+.controls ul input {
+    width: 80px;
+    padding-right: 10px;
 }
 
 /* Style range tag  */
@@ -507,17 +501,14 @@ input[type=range] {
     background: var(--lightgrey);
   }
 
+
 /* RESPONSIVE  */
 
 @media screen and (max-width: 1100px) {
 
-    .inner-content ul {
+    .inner-content ul, .albums {
         flex-wrap: wrap;
     } 
-
-    .albums {
-        flex-wrap: wrap;
-    }
 
     .card {
         width: calc(100% / 4);
@@ -566,6 +557,21 @@ input[type=range] {
         padding-left: 5px;
     }
 
+    #song-length input {
+        width: 180px;
+    }
+
+    .playing {
+        max-width: 150px;
+    }
+
+    .controls {
+        max-width: 150px;
+    }
+
+    .fa-regular.fa-heart {
+        padding-left: 15px;
+    }
 }
 
  
